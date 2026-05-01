@@ -303,7 +303,7 @@ const resultImages = {
     "เมะยำยูป้า": "images/เมะยำยูป้า.png",
     "เมะองศา": "images/เมะองศา.png",
     "เมะจ๊อด": "images/เมะจ๊อด.png",
-    "เมะฟิตเนส": "images/เมะฟิตเนส.png",
+    "เมะยิม bro": "images/เมะยิม bro.png",
     "เคะก้ำ": "images/เคะก้ำ.png",
     "เคะหอพระ": "images/เคะหอพระ.png",
     "เคะยิมเจ็ด": "images/เคะยิมเจ็ด.png",
@@ -406,7 +406,7 @@ const resultImages = {
             else if (q13Ans === 'B') resultKey = "เมะยำยูป้า";
             else if (q13Ans === 'C') resultKey = "เมะองศา";
             else if (q13Ans === 'D') resultKey = "เคะหอพระ";
-            else if (q13Ans === 'E') resultKey = "เมะฟิตเนส";
+            else if (q13Ans === 'E') resultKey = "เมะยิม bro";
         } else {
             // Logic ปกติตามที่บรีฟ
             if (primary === 'A') {
@@ -429,7 +429,7 @@ const resultImages = {
                 else if (secondary === 'E') resultKey = "เคะหอพระ";
                 else resultKey = "เคะสายสุขภาพ";
             } else if (primary === 'E') {
-                if (diff >= 3) resultKey = "เมะฟิตเนส"; // นำโดด
+                if (diff >= 3) resultKey = "เมะยิม bro"; // นำโดด
                 else if (secondary === 'B') resultKey = "เคะก้ำ";
                 else if (secondary === 'C') resultKey = "เคะยิมเจ็ด";
                 else if (secondary === 'A') resultKey = "เคะฟิตเนส";
@@ -439,7 +439,7 @@ const resultImages = {
 
         // กันเหนียวกรณีหลุด Logic ให้ Fallback ไปที่ตัว Default ของหมวดนั้นๆ
         if (!resultKey) {
-             const fallbacks = {A: "เมะหอป๋วย", B: "เมะยำยูป้า", C: "เมะองศา", D: "เคะสายสุขภาพ", E: "เมะฟิตเนส"};
+             const fallbacks = {A: "เมะหอป๋วย", B: "เมะยำยูป้า", C: "เมะองศา", D: "เคะสายสุขภาพ", E: "เมะยิม bro"};
              resultKey = fallbacks[primary];
         }
 
