@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+function displayResult(key) {
+    const data = resultsData[key];
+    document.getElementById('res-title').innerText = key;
+    document.getElementById('res-subtitle').innerText = data.sub;
+    document.getElementById('res-desc').innerText = data.desc;
+    document.getElementById('res-match').innerText = data.match;
+    
+    // --- ส่วนที่พี่สาวเพิ่มให้สำหรับจัดการรูปภาพ ---
+    const imgElement = document.getElementById('res-img');
+    const imagePath = resultImages[key]; // ดึง path รูปจาก Object resultImages
+
+    if (imagePath) {
+        imgElement.src = imagePath; // นำ Path ไปใส่เป็น Source ให้รูปภาพ
+        imgElement.style.display = "block"; // สั่งให้แสดงรูปภาพ
+    } else {
+        // กรณีหารูปไม่เจอ ซ่อนกรอบไว้เพื่อความสวยงาม
+        imgElement.style.display = "none";
+    }
+    // ----------------------------------------
+    
+    showPage('page-result');
+}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เมะ หรือ เคะ ในธรรมศาสตร์?</title>
