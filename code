@@ -298,6 +298,19 @@
         "เคะฟิตเนส": { sub: "เคะกึง", desc: "เคะแท้แอ๊บเมะ ตัวกึงโนหนึ่ง อย่างเอาเลยครับพี่ชาย", match: "No Match โสดโปรดจีบ" }
     };
 
+const resultImages = {
+    "เมะหอป๋วย": "images/เมะหอป๋วย.png",
+    "เมะยำยูป้า": "images/เมะยำยูป้า.png",
+    "เมะองศา": "images/เมะองศา.png",
+    "เมะจ๊อด": "images/เมะจ๊อด.png",
+    "เมะฟิตเนส": "images/เมะฟิตเนส.png",
+    "เคะก้ำ": "images/เคะก้ำ.png",
+    "เคะหอพระ": "images/เคะหอพระ.png",
+    "เคะยิมเจ็ด": "images/เคะยิมเจ็ด.png",
+    "เคะสายสุขภาพ": "images/เคะสายสุขภาพ.png",
+    "เคะเก้งหวาน": "images/เคะเก้งหวาน.png",
+    "เคะฟิตเนส": "images/เคะฟิตเนส.png"
+};
     let userAnswers = new Array(questions.length).fill(null);
     let currentStep = -1;
 
